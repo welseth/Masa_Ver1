@@ -57,6 +57,12 @@ Partial Public Class MASA_allDataSet
     
     Private relationFK_Flights_TowPlane2 As Global.System.Data.DataRelation
     
+    Private relationFK_Flights_First_name_inv As Global.System.Data.DataRelation
+    
+    Private relationFK_Flights_Instructor As Global.System.Data.DataRelation
+    
+    Private relationFK_Flights_Second_name_inv As Global.System.Data.DataRelation
+    
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -302,6 +308,9 @@ Partial Public Class MASA_allDataSet
         Me.relationFK_Flights_TowPilot3 = Me.Relations("FK_Flights_TowPilot3")
         Me.relationFK_Flights_TowPlane1 = Me.Relations("FK_Flights_TowPlane1")
         Me.relationFK_Flights_TowPlane2 = Me.Relations("FK_Flights_TowPlane2")
+        Me.relationFK_Flights_First_name_inv = Me.Relations("FK_Flights_First_name_inv")
+        Me.relationFK_Flights_Instructor = Me.Relations("FK_Flights_Instructor")
+        Me.relationFK_Flights_Second_name_inv = Me.Relations("FK_Flights_Second_name_inv")
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -344,6 +353,12 @@ Partial Public Class MASA_allDataSet
         Me.Relations.Add(Me.relationFK_Flights_TowPlane1)
         Me.relationFK_Flights_TowPlane2 = New Global.System.Data.DataRelation("FK_Flights_TowPlane2", New Global.System.Data.DataColumn() {Me.tableAircraft.Aircraft_refnumColumn}, New Global.System.Data.DataColumn() {Me.tableFlights.TowPlane2Column}, false)
         Me.Relations.Add(Me.relationFK_Flights_TowPlane2)
+        Me.relationFK_Flights_First_name_inv = New Global.System.Data.DataRelation("FK_Flights_First_name_inv", New Global.System.Data.DataColumn() {Me.tableMembers.Member_refnumColumn}, New Global.System.Data.DataColumn() {Me.tableFlights.First_name_on_invoiceColumn}, false)
+        Me.Relations.Add(Me.relationFK_Flights_First_name_inv)
+        Me.relationFK_Flights_Instructor = New Global.System.Data.DataRelation("FK_Flights_Instructor", New Global.System.Data.DataColumn() {Me.tableMembers.Member_refnumColumn}, New Global.System.Data.DataColumn() {Me.tableFlights.Instructor_nameColumn}, false)
+        Me.Relations.Add(Me.relationFK_Flights_Instructor)
+        Me.relationFK_Flights_Second_name_inv = New Global.System.Data.DataRelation("FK_Flights_Second_name_inv", New Global.System.Data.DataColumn() {Me.tableMembers.Member_refnumColumn}, New Global.System.Data.DataColumn() {Me.tableFlights.Second_name_on_invoiceColumn}, false)
+        Me.Relations.Add(Me.relationFK_Flights_Second_name_inv)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1499,7 +1514,7 @@ Partial Public Class MASA_allDataSet
         Public Overloads Function AddFlightsRow( _
                     ByVal Flight_refnum As Integer,  _
                     ByVal parentMembersRowByFK_Flights_Name As MembersRow,  _
-                    ByVal Instructor_name As Integer,  _
+                    ByVal parentMembersRowByFK_Flights_Instructor As MembersRow,  _
                     ByVal Passenger_name As Integer,  _
                     ByVal parentMembersRowByFK_Flights_OD1 As MembersRow,  _
                     ByVal parentMembersRowByFK_Flights_OD2 As MembersRow,  _
@@ -1520,16 +1535,19 @@ Partial Public Class MASA_allDataSet
                     ByVal Rope_break As Integer,  _
                     ByVal parentAirportRowByFK_Flights_Airport As AirportRow,  _
                     ByVal Flight_minutes As System.TimeSpan,  _
-                    ByVal First_name_on_invoice As Integer,  _
+                    ByVal parentMembersRowByFK_Flights_First_name_inv As MembersRow,  _
                     ByVal Split_cost As Boolean,  _
                     ByVal Percent_1st_check As Integer,  _
-                    ByVal Second_name_on_invoice As Integer,  _
+                    ByVal parentMembersRowByFK_Flights_Second_name_inv As MembersRow,  _
                     ByVal Penalty_charge As Boolean,  _
                     ByVal Cost_this_flight As Decimal) As FlightsRow
             Dim rowFlightsRow As FlightsRow = CType(Me.NewRow,FlightsRow)
-            Dim columnValuesArray() As Object = New Object() {Flight_refnum, Nothing, Instructor_name, Passenger_name, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, _Date, Glider_takeoff_time, Glider_landing_time, Tow_takeoff_time, Tow_landing_time, Altitude_towed, Rope_break, Nothing, Flight_minutes, First_name_on_invoice, Split_cost, Percent_1st_check, Second_name_on_invoice, Penalty_charge, Cost_this_flight}
+            Dim columnValuesArray() As Object = New Object() {Flight_refnum, Nothing, Nothing, Passenger_name, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, _Date, Glider_takeoff_time, Glider_landing_time, Tow_takeoff_time, Tow_landing_time, Altitude_towed, Rope_break, Nothing, Flight_minutes, Nothing, Split_cost, Percent_1st_check, Nothing, Penalty_charge, Cost_this_flight}
             If (Not (parentMembersRowByFK_Flights_Name) Is Nothing) Then
                 columnValuesArray(1) = parentMembersRowByFK_Flights_Name(0)
+            End If
+            If (Not (parentMembersRowByFK_Flights_Instructor) Is Nothing) Then
+                columnValuesArray(2) = parentMembersRowByFK_Flights_Instructor(0)
             End If
             If (Not (parentMembersRowByFK_Flights_OD1) Is Nothing) Then
                 columnValuesArray(4) = parentMembersRowByFK_Flights_OD1(0)
@@ -1563,6 +1581,12 @@ Partial Public Class MASA_allDataSet
             End If
             If (Not (parentAirportRowByFK_Flights_Airport) Is Nothing) Then
                 columnValuesArray(21) = parentAirportRowByFK_Flights_Airport(0)
+            End If
+            If (Not (parentMembersRowByFK_Flights_First_name_inv) Is Nothing) Then
+                columnValuesArray(23) = parentMembersRowByFK_Flights_First_name_inv(0)
+            End If
+            If (Not (parentMembersRowByFK_Flights_Second_name_inv) Is Nothing) Then
+                columnValuesArray(26) = parentMembersRowByFK_Flights_Second_name_inv(0)
             End If
             rowFlightsRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowFlightsRow)
@@ -3070,6 +3094,39 @@ Partial Public Class MASA_allDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property MembersRowByFK_Flights_First_name_inv() As MembersRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK_Flights_First_name_inv")),MembersRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FK_Flights_First_name_inv"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property MembersRowByFK_Flights_Instructor() As MembersRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK_Flights_Instructor")),MembersRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FK_Flights_Instructor"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property MembersRowByFK_Flights_Second_name_inv() As MembersRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK_Flights_Second_name_inv")),MembersRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FK_Flights_Second_name_inv"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsInstructor_nameNull() As Boolean
             Return Me.IsNull(Me.tableFlights.Instructor_nameColumn)
         End Function
@@ -3505,6 +3562,36 @@ Partial Public Class MASA_allDataSet
                 Return New FlightsRow(-1) {}
             Else
                 Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK_Flights_TowPilot3")),FlightsRow())
+            End If
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function GetFlightsRowsByFK_Flights_First_name_inv() As FlightsRow()
+            If (Me.Table.ChildRelations("FK_Flights_First_name_inv") Is Nothing) Then
+                Return New FlightsRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK_Flights_First_name_inv")),FlightsRow())
+            End If
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function GetFlightsRowsByFK_Flights_Instructor() As FlightsRow()
+            If (Me.Table.ChildRelations("FK_Flights_Instructor") Is Nothing) Then
+                Return New FlightsRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK_Flights_Instructor")),FlightsRow())
+            End If
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function GetFlightsRowsByFK_Flights_Second_name_inv() As FlightsRow()
+            If (Me.Table.ChildRelations("FK_Flights_Second_name_inv") Is Nothing) Then
+                Return New FlightsRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK_Flights_Second_name_inv")),FlightsRow())
             End If
         End Function
     End Class
@@ -6010,12 +6097,17 @@ Namespace MASA_allDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT Member_refnum, Name, Instructor, [Tow Pilot], MASA_Member, Guest_Member FR"& _ 
                 "OM dbo.Members"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT Member_refnum, Name, Instructor, [Tow Pilot], MASA_Member, Guest_Member FR"& _ 
+                "OM dbo.Members"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -6040,6 +6132,19 @@ Namespace MASA_allDataSetTableAdapters
             Dim dataTable As MASA_allDataSet.MembersDataTable = New MASA_allDataSet.MembersDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillBy(ByVal dataTable As MASA_allDataSet.MembersDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

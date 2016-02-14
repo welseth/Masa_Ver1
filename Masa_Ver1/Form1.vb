@@ -1,19 +1,18 @@
 ﻿Public Class Form1
 
-
-
-
-
-
     Private Sub Form1_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-        'set the date/time picker to default to TODAY on form load.  Will let the user change the date
-        ' but it defaults to now.
+        'TODO: This line of code loads data into the 'MASA_allDataSet.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter.Fill(Me.MASA_allDataSet.Members)
+        'TODO: This line of code loads data into the 'MASA_allDataSet.Aircraft' table. You can move, or remove it, as needed.
+        Me.AircraftTableAdapter.Fill(Me.MASA_allDataSet.Aircraft)
+
+        'Below line sets the date/time picker to default to TODAY on form load.  It will let the user change the date
+        ' but it defaults to now when the form opens.
         DateTimePicker1.Value = DateTime.Now
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
-    End Sub
+
 
 
     '' Below text is SAMPLE way to populate text box from a DB.  Does NOT work yet, needs work.
