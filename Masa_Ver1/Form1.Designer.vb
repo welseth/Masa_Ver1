@@ -48,9 +48,9 @@ Partial Class Form1
         '
         Me.CheckedListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Location = New System.Drawing.Point(16, 117)
+        Me.CheckedListBox1.Location = New System.Drawing.Point(20, 119)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(458, 64)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(458, 46)
         Me.CheckedListBox1.TabIndex = 2
         '
         'Label1
@@ -102,27 +102,27 @@ Partial Class Form1
         '
         'TabPage3
         '
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 33)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1010, 498)
+        Me.TabPage3.Size = New System.Drawing.Size(1010, 605)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Print Invoices"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
         'TabPage4
         '
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 33)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1010, 498)
+        Me.TabPage4.Size = New System.Drawing.Size(1010, 605)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Add Pilot Names"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
         'TabPage5
         '
-        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 33)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(1010, 498)
+        Me.TabPage5.Size = New System.Drawing.Size(1010, 605)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Admin Stuff"
         Me.TabPage5.UseVisualStyleBackColor = True
