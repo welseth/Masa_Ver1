@@ -1,6 +1,8 @@
 ﻿Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        'TODO: This line of code loads data into the 'MASA_allDataSet.Flights' table. You can move, or remove it, as needed.
+        'Me.FlightsTableAdapter.Fill(Me.MASA_allDataSet.Flights)
         'TODO: This line of code loads data into the 'MASA_allDataSet.Members' table. You can move, or remove it, as needed.
         Me.MembersTableAdapter.Fill(Me.MASA_allDataSet.Members)
         'TODO: This line of code loads data into the 'MASA_allDataSet.Aircraft' table. You can move, or remove it, as needed.
@@ -11,15 +13,24 @@
         DateTimePicker1.Value = DateTime.Now
     End Sub
 
+    Private Sub MembersBindingSource_CurrentChanged(sender As Object, e As EventArgs) Handles MembersBindingSource.CurrentChanged
+
+    End Sub
+
+
+
+
+
+
+
 
 
 
 
     '' Below text is SAMPLE way to populate text box from a DB.  Does NOT work yet, needs work.
-    'Ctrl + K + C to comment
+    '    Ctrl + K + C to comment
     '    Ctrl + K + U to uncomment
-    ' testing Git!!
-    'another change, this is for the branch
+
     'Public Class frmDataTable
     '    Private Sub frmDataTable_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     '        Dim dt As New DataTable With {.TableName = "MyTable"}
