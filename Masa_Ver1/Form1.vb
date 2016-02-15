@@ -6,12 +6,21 @@
 
 
     Private Sub Form1_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        'TODO: This line of code loads data into the 'MASA_allDataSet.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter.Fill(Me.MASA_allDataSet.Members)
         'set the date/time picker to default to TODAY on form load.  Will let the user change the date
         ' but it defaults to now.
         DateTimePicker1.Value = DateTime.Now
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub MembersBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles MembersBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.MembersBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.MASA_allDataSet)
 
     End Sub
 
