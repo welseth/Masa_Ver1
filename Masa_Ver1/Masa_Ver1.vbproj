@@ -102,6 +102,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AOD2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EditAllAircraft.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditAllAircraft.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditAllAirport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditAllAirport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditAllFlights.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditAllFlights.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditAllMembs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditAllMembs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditPilotNames.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditPilotNames.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +239,61 @@
     </None>
     <None Include="AOD2.xss">
       <DependentUpon>AOD2.xsd</DependentUpon>
+    </None>
+    <None Include="EditAllAircraft.xsc">
+      <DependentUpon>EditAllAircraft.xsd</DependentUpon>
+    </None>
+    <None Include="EditAllAircraft.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EditAllAircraft.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EditAllAircraft.xss">
+      <DependentUpon>EditAllAircraft.xsd</DependentUpon>
+    </None>
+    <None Include="EditAllAirport.xsc">
+      <DependentUpon>EditAllAirport.xsd</DependentUpon>
+    </None>
+    <None Include="EditAllAirport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EditAllAirport.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EditAllAirport.xss">
+      <DependentUpon>EditAllAirport.xsd</DependentUpon>
+    </None>
+    <None Include="EditAllFlights.xsc">
+      <DependentUpon>EditAllFlights.xsd</DependentUpon>
+    </None>
+    <None Include="EditAllFlights.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EditAllFlights.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EditAllFlights.xss">
+      <DependentUpon>EditAllFlights.xsd</DependentUpon>
+    </None>
+    <None Include="EditAllMembs.xsc">
+      <DependentUpon>EditAllMembs.xsd</DependentUpon>
+    </None>
+    <None Include="EditAllMembs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EditAllMembs.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EditAllMembs.xss">
+      <DependentUpon>EditAllMembs.xsd</DependentUpon>
+    </None>
+    <None Include="EditPilotNames.xsc">
+      <DependentUpon>EditPilotNames.xsd</DependentUpon>
+    </None>
+    <None Include="EditPilotNames.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EditPilotNames.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EditPilotNames.xss">
+      <DependentUpon>EditPilotNames.xsd</DependentUpon>
     </None>
     <None Include="MASA_allDataSet.xsc">
       <DependentUpon>MASA_allDataSet.xsd</DependentUpon>

@@ -1,11 +1,16 @@
 ﻿Public Class Form1
 
-
-
-
-
-
     Private Sub Form1_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        'TODO: This line of code loads data into the 'EditAllFlights.Flights' table. You can move, or remove it, as needed.
+        Me.FlightsTableAdapter.Fill(Me.EditAllFlights.Flights)
+        'TODO: This line of code loads data into the 'EditAllAirport.Airport' table. You can move, or remove it, as needed.
+        Me.AirportTableAdapter1.Fill(Me.EditAllAirport.Airport)
+        'TODO: This line of code loads data into the 'EditAllAircraft.Aircraft' table. You can move, or remove it, as needed.
+        Me.AircraftTableAdapter2.Fill(Me.EditAllAircraft.Aircraft)
+        'TODO: This line of code loads data into the 'EditAllMembs.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter10.Fill(Me.EditAllMembs.Members)
+        'TODO: This line of code loads data into the 'EditPilotNames.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter9.Fill(Me.EditPilotNames.Members)
         'TODO: This line of code loads data into the 'Airport1.Airport' table. You can move, or remove it, as needed.
         Me.AirportTableAdapter.Fill(Me.Airport1.Airport)
         'TODO: This line of code loads data into the 'TowPlane2.Aircraft' table. You can move, or remove it, as needed.
@@ -30,6 +35,9 @@
         Me.MembersTableAdapter1.Fill(Me.OD1.Members)
         'TODO: This line of code loads data into the 'MASA_allDataSet.Members' table. You can move, or remove it, as needed.
         Me.MembersTableAdapter.Fill(Me.MASA_allDataSet.Members)
+
+
+
         'set the date/time picker to default to TODAY on form load.  Will let the user change the date
         ' but it defaults to now.
         DateTimePicker1.Value = DateTime.Now
@@ -75,6 +83,14 @@
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
+
+    Private Sub TabPage7_Click(sender As Object, e As EventArgs) Handles TabPage7.Click
 
     End Sub
 
