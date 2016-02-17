@@ -87,6 +87,21 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Airport1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Airport1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AOD1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AOD1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AOD2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AOD2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +129,46 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OD1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OD1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OD2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OD2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OD3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OD3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TowPilot1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TowPilot1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TowPilot2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TowPilot2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TowPilot3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TowPilot3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TowPlane1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TowPlane1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TowPlane2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TowPlane2.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -127,6 +182,39 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Airport1.xsc">
+      <DependentUpon>Airport1.xsd</DependentUpon>
+    </None>
+    <None Include="Airport1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Airport1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Airport1.xss">
+      <DependentUpon>Airport1.xsd</DependentUpon>
+    </None>
+    <None Include="AOD1.xsc">
+      <DependentUpon>AOD1.xsd</DependentUpon>
+    </None>
+    <None Include="AOD1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AOD1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AOD1.xss">
+      <DependentUpon>AOD1.xsd</DependentUpon>
+    </None>
+    <None Include="AOD2.xsc">
+      <DependentUpon>AOD2.xsd</DependentUpon>
+    </None>
+    <None Include="AOD2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AOD2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AOD2.xss">
+      <DependentUpon>AOD2.xsd</DependentUpon>
+    </None>
     <None Include="MASA_allDataSet.xsc">
       <DependentUpon>MASA_allDataSet.xsd</DependentUpon>
     </None>
@@ -148,6 +236,94 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="OD1.xsc">
+      <DependentUpon>OD1.xsd</DependentUpon>
+    </None>
+    <None Include="OD1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OD1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OD1.xss">
+      <DependentUpon>OD1.xsd</DependentUpon>
+    </None>
+    <None Include="OD2.xsc">
+      <DependentUpon>OD2.xsd</DependentUpon>
+    </None>
+    <None Include="OD2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OD2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OD2.xss">
+      <DependentUpon>OD2.xsd</DependentUpon>
+    </None>
+    <None Include="OD3.xsc">
+      <DependentUpon>OD3.xsd</DependentUpon>
+    </None>
+    <None Include="OD3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OD3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OD3.xss">
+      <DependentUpon>OD3.xsd</DependentUpon>
+    </None>
+    <None Include="TowPilot1.xsc">
+      <DependentUpon>TowPilot1.xsd</DependentUpon>
+    </None>
+    <None Include="TowPilot1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TowPilot1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TowPilot1.xss">
+      <DependentUpon>TowPilot1.xsd</DependentUpon>
+    </None>
+    <None Include="TowPilot2.xsc">
+      <DependentUpon>TowPilot2.xsd</DependentUpon>
+    </None>
+    <None Include="TowPilot2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TowPilot2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TowPilot2.xss">
+      <DependentUpon>TowPilot2.xsd</DependentUpon>
+    </None>
+    <None Include="TowPilot3.xsc">
+      <DependentUpon>TowPilot3.xsd</DependentUpon>
+    </None>
+    <None Include="TowPilot3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TowPilot3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TowPilot3.xss">
+      <DependentUpon>TowPilot3.xsd</DependentUpon>
+    </None>
+    <None Include="TowPlane1.xsc">
+      <DependentUpon>TowPlane1.xsd</DependentUpon>
+    </None>
+    <None Include="TowPlane1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TowPlane1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TowPlane1.xss">
+      <DependentUpon>TowPlane1.xsd</DependentUpon>
+    </None>
+    <None Include="TowPlane2.xsc">
+      <DependentUpon>TowPlane2.xsd</DependentUpon>
+    </None>
+    <None Include="TowPlane2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TowPlane2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TowPlane2.xss">
+      <DependentUpon>TowPlane2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MASA_all.mdf">

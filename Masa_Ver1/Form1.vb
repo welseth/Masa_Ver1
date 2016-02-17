@@ -6,6 +6,28 @@
 
 
     Private Sub Form1_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        'TODO: This line of code loads data into the 'Airport1.Airport' table. You can move, or remove it, as needed.
+        Me.AirportTableAdapter.Fill(Me.Airport1.Airport)
+        'TODO: This line of code loads data into the 'TowPlane2.Aircraft' table. You can move, or remove it, as needed.
+        Me.AircraftTableAdapter1.Fill(Me.TowPlane2.Aircraft)
+        'TODO: This line of code loads data into the 'Airport1.Aircraft' table. You can move, or remove it, as needed.
+        Me.AircraftTableAdapter.Fill(Me.Airport1.Aircraft)
+        'TODO: This line of code loads data into the 'TowPilot3.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter8.Fill(Me.TowPilot3.Members)
+        'TODO: This line of code loads data into the 'TowPilot2.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter7.Fill(Me.TowPilot2.Members)
+        'TODO: This line of code loads data into the 'TowPilot1.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter6.Fill(Me.TowPilot1.Members)
+        'TODO: This line of code loads data into the 'AOD2.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter5.Fill(Me.AOD2.Members)
+        'TODO: This line of code loads data into the 'AOD1.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter4.Fill(Me.AOD1.Members)
+        'TODO: This line of code loads data into the 'OD3.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter3.Fill(Me.OD3.Members)
+        'TODO: This line of code loads data into the 'OD2.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter2.Fill(Me.OD2.Members)
+        'TODO: This line of code loads data into the 'OD1.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter1.Fill(Me.OD1.Members)
         'TODO: This line of code loads data into the 'MASA_allDataSet.Members' table. You can move, or remove it, as needed.
         Me.MembersTableAdapter.Fill(Me.MASA_allDataSet.Members)
         'set the date/time picker to default to TODAY on form load.  Will let the user change the date
@@ -21,6 +43,38 @@
         Me.Validate()
         Me.MembersBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.MASA_allDataSet)
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub NameComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NameComboBox4.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub NameComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NameComboBox3.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub NameComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NameComboBox2.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub NameComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NameComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 
