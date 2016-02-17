@@ -485,7 +485,7 @@ Partial Class Form1
         Me.NameComboBox5.DisplayMember = "Name"
         Me.NameComboBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NameComboBox5.FormattingEnabled = True
-        Me.NameComboBox5.Location = New System.Drawing.Point(370, 119)
+        Me.NameComboBox5.Location = New System.Drawing.Point(345, 74)
         Me.NameComboBox5.Name = "NameComboBox5"
         Me.NameComboBox5.Size = New System.Drawing.Size(230, 28)
         Me.NameComboBox5.TabIndex = 15
@@ -664,7 +664,7 @@ Partial Class Form1
         '
         Me.TabPage3.Location = New System.Drawing.Point(4, 33)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1010, 605)
+        Me.TabPage3.Size = New System.Drawing.Size(1017, 442)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Print Invoices"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -673,7 +673,7 @@ Partial Class Form1
         '
         Me.TabPage4.Location = New System.Drawing.Point(4, 33)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1010, 605)
+        Me.TabPage4.Size = New System.Drawing.Size(1017, 442)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Add Pilot Names"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -682,7 +682,7 @@ Partial Class Form1
         '
         Me.TabPage5.Location = New System.Drawing.Point(4, 33)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(1010, 605)
+        Me.TabPage5.Size = New System.Drawing.Size(1017, 442)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Admin Stuff"
         Me.TabPage5.UseVisualStyleBackColor = True
