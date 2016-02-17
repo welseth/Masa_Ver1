@@ -463,7 +463,7 @@ Partial Class Form1
         Me.NameComboBox6.DisplayMember = "Name"
         Me.NameComboBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NameComboBox6.FormattingEnabled = True
-        Me.NameComboBox6.Location = New System.Drawing.Point(370, 188)
+        Me.NameComboBox6.Location = New System.Drawing.Point(313, 188)
         Me.NameComboBox6.Name = "NameComboBox6"
         Me.NameComboBox6.Size = New System.Drawing.Size(230, 28)
         Me.NameComboBox6.TabIndex = 16
