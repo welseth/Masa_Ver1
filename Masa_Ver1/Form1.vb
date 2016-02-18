@@ -38,7 +38,9 @@
         'TODO: This line of code loads data into the 'MASA_allDataSet.Members' table. You can move, or remove it, as needed.
         Me.MembersTableAdapter.Fill(Me.MASA_allDataSet.Members)
 
+        Dim varX As Object
 
+        varX = ILookup("[LastName]", "Employees", "[EmployeeID] = 1")
 
         'set the date/time picker to default to TODAY on form load.  Will let the user change the date
         ' but it defaults to now.
