@@ -485,7 +485,7 @@ Partial Class Form1
         Me.NameComboBox5.DisplayMember = "Name"
         Me.NameComboBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NameComboBox5.FormattingEnabled = True
-        Me.NameComboBox5.Location = New System.Drawing.Point(340, 53)
+        Me.NameComboBox5.Location = New System.Drawing.Point(358, 65)
         Me.NameComboBox5.Name = "NameComboBox5"
         Me.NameComboBox5.Size = New System.Drawing.Size(230, 28)
         Me.NameComboBox5.TabIndex = 15
