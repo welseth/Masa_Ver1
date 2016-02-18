@@ -152,7 +152,7 @@ Partial Class Form1
         'DateTimePicker1
         '
         Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(29, 55)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(55, 36)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(265, 26)
         Me.DateTimePicker1.TabIndex = 0
