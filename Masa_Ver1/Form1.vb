@@ -1,6 +1,8 @@
 ﻿Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        'TODO: This line of code loads data into the 'MASA_allDataSet.Flights' table. You can move, or remove it, as needed.
+        Me.FlightsTableAdapter1.Fill(Me.MASA_allDataSet.Flights)
         'TODO: This line of code loads data into the 'EditAllFlights.Flights' table. You can move, or remove it, as needed.
         Me.FlightsTableAdapter.Fill(Me.EditAllFlights.Flights)
         'TODO: This line of code loads data into the 'EditAllAirport.Airport' table. You can move, or remove it, as needed.
