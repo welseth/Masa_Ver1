@@ -1,4 +1,9 @@
-﻿Public Class Form2
+﻿' this is one example of binding forms to foreign keys.  Source is:
+'  http://www.dreamincode.net/forums/topic/158096-binding-foreign-key-to-combobox/
+'
+
+
+Public Class Form2
     Private _LocationID As Integer
     Private FormIsLoading As Boolean
 
