@@ -12,9 +12,9 @@
         'see we pass the SelectedValue, which is actually the ValueMember
         'but make sure the user has actually selected something
         If cboLocations.SelectedIndex = -1 Then
-            MessageBox.Show("No Location Selected!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error
+            MessageBox.Show("No Location Selected!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             'leave here since there is no location
-                Exit Sub
+            Exit Sub
         End If
         'open the Form2
         Dim MyOffices As New Form2(cboLocations.SelectedValue)

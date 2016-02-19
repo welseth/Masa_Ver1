@@ -1,6 +1,17 @@
 ﻿' this is one example of binding forms to foreign keys.  Source is:
 '  http://www.dreamincode.net/forums/topic/158096-binding-foreign-key-to-combobox/
 '
+'I have 2 tables
+
+'Locations
+'  location_refnbr(pk)
+'  location_name
+'  office_refnbr(fk)
+
+
+'Offices
+'  office_refnbr(pk)
+'  office_name
 
 
 Public Class Form2
