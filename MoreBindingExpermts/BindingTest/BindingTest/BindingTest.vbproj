@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{655EB8BB-E615-4D43-92C6-EC1A77F5426D}</ProjectGuid>
+    <ProjectGuid>{B4E44AA1-5401-4AE1-A3EC-56BF42E98313}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Masa_Ver1.My.MyApplication</StartupObject>
-    <RootNamespace>Masa_Ver1</RootNamespace>
-    <AssemblyName>Masa_Ver1</AssemblyName>
+    <StartupObject>BindingTest.My.MyApplication</StartupObject>
+    <RootNamespace>BindingTest</RootNamespace>
+    <AssemblyName>BindingTest</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -36,7 +36,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Masa_Ver1.xml</DocumentationFile>
+    <DocumentationFile>BindingTest.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -46,7 +46,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Masa_Ver1.xml</DocumentationFile>
+    <DocumentationFile>BindingTest.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -87,10 +87,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnterNewFlights.Designer.vb">
+    <Compile Include="AddFlights.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EnterNewFlights.xsd</DependentUpon>
+      <DependentUpon>AddFlights.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -127,16 +127,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="EnterNewFlights.xsc">
-      <DependentUpon>EnterNewFlights.xsd</DependentUpon>
+    <None Include="AddFlights.xsc">
+      <DependentUpon>AddFlights.xsd</DependentUpon>
     </None>
-    <None Include="EnterNewFlights.xsd">
+    <None Include="AddFlights.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EnterNewFlights.Designer.vb</LastGenOutput>
+      <LastGenOutput>AddFlights.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="EnterNewFlights.xss">
-      <DependentUpon>EnterNewFlights.xsd</DependentUpon>
+    <None Include="AddFlights.xss">
+      <DependentUpon>AddFlights.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

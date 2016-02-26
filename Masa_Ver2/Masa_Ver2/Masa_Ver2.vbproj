@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{655EB8BB-E615-4D43-92C6-EC1A77F5426D}</ProjectGuid>
+    <ProjectGuid>{630F04EF-8509-44A2-8450-5605AD667F70}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Masa_Ver1.My.MyApplication</StartupObject>
-    <RootNamespace>Masa_Ver1</RootNamespace>
-    <AssemblyName>Masa_Ver1</AssemblyName>
+    <StartupObject>Masa_Ver2.My.MyApplication</StartupObject>
+    <RootNamespace>Masa_Ver2</RootNamespace>
+    <AssemblyName>Masa_Ver2</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -36,7 +36,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Masa_Ver1.xml</DocumentationFile>
+    <DocumentationFile>Masa_Ver2.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -46,7 +46,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Masa_Ver1.xml</DocumentationFile>
+    <DocumentationFile>Masa_Ver2.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -87,10 +87,20 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnterNewFlights.Designer.vb">
+    <Compile Include="FlightsGliderPilotName.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EnterNewFlights.xsd</DependentUpon>
+      <DependentUpon>FlightsGliderPilotName.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FlightsInstructorName.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlightsInstructorName.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FlightsPassengerName.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlightsPassengerName.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -114,6 +124,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NewFlightsSavedHere.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewFlightsSavedHere.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -127,16 +142,38 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="EnterNewFlights.xsc">
-      <DependentUpon>EnterNewFlights.xsd</DependentUpon>
+    <None Include="FlightsGliderPilotName.xsc">
+      <DependentUpon>FlightsGliderPilotName.xsd</DependentUpon>
     </None>
-    <None Include="EnterNewFlights.xsd">
+    <None Include="FlightsGliderPilotName.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EnterNewFlights.Designer.vb</LastGenOutput>
+      <LastGenOutput>FlightsGliderPilotName.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="EnterNewFlights.xss">
-      <DependentUpon>EnterNewFlights.xsd</DependentUpon>
+    <None Include="FlightsGliderPilotName.xss">
+      <DependentUpon>FlightsGliderPilotName.xsd</DependentUpon>
+    </None>
+    <None Include="FlightsInstructorName.xsc">
+      <DependentUpon>FlightsInstructorName.xsd</DependentUpon>
+    </None>
+    <None Include="FlightsInstructorName.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlightsInstructorName.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FlightsInstructorName.xss">
+      <DependentUpon>FlightsInstructorName.xsd</DependentUpon>
+    </None>
+    <None Include="FlightsPassengerName.xsc">
+      <DependentUpon>FlightsPassengerName.xsd</DependentUpon>
+    </None>
+    <None Include="FlightsPassengerName.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlightsPassengerName.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FlightsPassengerName.xss">
+      <DependentUpon>FlightsPassengerName.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -148,6 +185,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="NewFlightsSavedHere.xsc">
+      <DependentUpon>NewFlightsSavedHere.xsd</DependentUpon>
+    </None>
+    <None Include="NewFlightsSavedHere.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewFlightsSavedHere.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewFlightsSavedHere.xss">
+      <DependentUpon>NewFlightsSavedHere.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MASA_all.mdf">

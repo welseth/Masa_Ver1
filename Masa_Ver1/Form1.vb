@@ -1,6 +1,20 @@
 ﻿Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        'TODO: This line of code loads data into the 'EnterNewFlights.Flights' table. You can move, or remove it, as needed.
+        Me.FlightsTableAdapter.Fill(Me.EnterNewFlights.Flights)
+        'TODO: This line of code loads data into the 'EnterNewFlights_MemberNames.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter.Fill(Me.EnterNewFlights_MemberNames.Members)
+        'TODO: This line of code loads data into the 'Binding2.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter13.Fill(Me.Binding2.Members)
+        'TODO: This line of code loads data into the 'Binding2.Airport' table. You can move, or remove it, as needed.
+        Me.AirportTableAdapter2.Fill(Me.Binding2.Airport)
+        'TODO: This line of code loads data into the 'TowPilot3.Flights' table. You can move, or remove it, as needed.
+        Me.FlightsTableAdapter2.Fill(Me.TowPilot3.Flights)
+        'TODO: This line of code loads data into the 'BindingExperiment1.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter12.Fill(Me.ExperimentBinding1.Members)
+        'TODO: This line of code loads data into the 'EditAllFlights.Members' table. You can move, or remove it, as needed.
+        Me.MembersTableAdapter11.Fill(Me.EditAllFlights.Members)
         'TODO: This line of code loads data into the 'MASA_allDataSet.Flights' table. You can move, or remove it, as needed.
         Me.FlightsTableAdapter1.Fill(Me.MASA_allDataSet.Flights)
         'TODO: This line of code loads data into the 'EditAllFlights.Flights' table. You can move, or remove it, as needed.
@@ -43,46 +57,46 @@
         DateTimePicker1.Value = DateTime.Now
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub MembersBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles MembersBindingNavigatorSaveItem.Click
+    Private Sub MembersBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.MembersBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.MASA_allDataSet)
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub NameComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NameComboBox4.SelectedIndexChanged
+    Private Sub NameComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub NameComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NameComboBox3.SelectedIndexChanged
+    Private Sub NameComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+    Private Sub Label5_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub NameComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NameComboBox2.SelectedIndexChanged
+    Private Sub NameComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub NameComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NameComboBox1.SelectedIndexChanged
+    Private Sub NameComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -91,6 +105,32 @@
     End Sub
 
     Private Sub TabPage7_Click(sender As Object, e As EventArgs) Handles TabPage7.Click
+
+    End Sub
+
+    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
+
+    End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+
+    End Sub
+
+    Private Sub TabPage8_Click(sender As Object, e As EventArgs) Handles TabPage8.Click
+
+    End Sub
+
+    Private Sub MembersBindingNavigatorSaveItem_Click_1(sender As Object, e As EventArgs)
+        Me.Validate()
+        Me.MembersBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.EnterNewFlights_MemberNames)
+
+    End Sub
+
+    Private Sub FlightsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles FlightsBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.FlightsBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.EnterNewFlights)
 
     End Sub
 
