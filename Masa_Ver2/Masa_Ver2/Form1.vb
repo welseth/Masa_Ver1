@@ -2,11 +2,15 @@
     Private Sub FlightsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles FlightsBindingNavigatorSaveItem.Click
         Me.Validate()
         Me.FlightsBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.NewFlightsSavedHere)
+        Me.FlightsTableAdapterManager.UpdateAll(Me.NewFlightsSavedHere)
 
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'FlightsInstructorName.Members' table. You can move, or remove it, as needed.
+        Me.InstructorTableAdapter.Fill(Me.InstructorName.Members)
+        'TODO: This line of code loads data into the 'FlightsGliderPilotName.Members' table. You can move, or remove it, as needed.
+        Me.GliderPilotNameTableAdapter.Fill(Me.FlightsGliderPilotName.Members)
         'TODO: This line of code loads data into the 'NewFlightsSavedHere.Flights' table. You can move, or remove it, as needed.
         Me.FlightsTableAdapter.Fill(Me.NewFlightsSavedHere.Flights)
 

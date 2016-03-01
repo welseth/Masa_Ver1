@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,9 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Dim Flight_refnumLabel As System.Windows.Forms.Label
         Dim Glider_Pilot_NameLabel As System.Windows.Forms.Label
         Dim Instructor_nameLabel As System.Windows.Forms.Label
@@ -53,32 +52,32 @@ Partial Class Form1
         Dim Second_name_on_invoiceLabel As System.Windows.Forms.Label
         Dim Penalty_chargeLabel As System.Windows.Forms.Label
         Dim Cost_this_flightLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.NewFlightsSavedHere = New Masa_Ver2.NewFlightsSavedHere()
-        Me.FlightsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FlightsTableAdapter = New Masa_Ver2.NewFlightsSavedHereTableAdapters.FlightsTableAdapter()
-        Me.TableAdapterManager = New Masa_Ver2.NewFlightsSavedHereTableAdapters.TableAdapterManager()
         Me.FlightsBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.FlightsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.NewFlightsSavedHere = New Masa_Ver2.NewFlightsSavedHere()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.FlightsBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.Flight_refnumTextBox = New System.Windows.Forms.TextBox()
         Me.Glider_Pilot_NameComboBox = New System.Windows.Forms.ComboBox()
+        Me.GliderPilotNameBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.FlightsGliderPilotName = New Masa_Ver2.FlightsGliderPilotName()
         Me.Instructor_nameComboBox = New System.Windows.Forms.ComboBox()
+        Me.InstructorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.InstructorName = New Masa_Ver2.FlightsInstructorName()
         Me.Passenger_nameComboBox = New System.Windows.Forms.ComboBox()
         Me.OD1ComboBox = New System.Windows.Forms.ComboBox()
         Me.OD2ComboBox = New System.Windows.Forms.ComboBox()
@@ -105,6 +104,15 @@ Partial Class Form1
         Me.Second_name_on_invoiceComboBox = New System.Windows.Forms.ComboBox()
         Me.Penalty_chargeCheckBox = New System.Windows.Forms.CheckBox()
         Me.Cost_this_flightTextBox = New System.Windows.Forms.TextBox()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.FlightsTableAdapter = New Masa_Ver2.NewFlightsSavedHereTableAdapters.FlightsTableAdapter()
+        Me.FlightsTableAdapterManager = New Masa_Ver2.NewFlightsSavedHereTableAdapters.TableAdapterManager()
+        Me.GliderPilotNameTableAdapter = New Masa_Ver2.FlightsGliderPilotNameTableAdapters.MembersTableAdapter()
+        Me.GliderPilotNameTableAdapterManager1 = New Masa_Ver2.FlightsGliderPilotNameTableAdapters.TableAdapterManager()
+        Me.InstructorTableAdapter = New Masa_Ver2.FlightsInstructorNameTableAdapters.MembersTableAdapter()
+        Me.InstructorTableAdapterManager = New Masa_Ver2.FlightsInstructorNameTableAdapters.TableAdapterManager()
         Flight_refnumLabel = New System.Windows.Forms.Label()
         Glider_Pilot_NameLabel = New System.Windows.Forms.Label()
         Instructor_nameLabel = New System.Windows.Forms.Label()
@@ -136,11 +144,276 @@ Partial Class Form1
         Cost_this_flightLabel = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
-        CType(Me.NewFlightsSavedHere, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FlightsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FlightsBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlightsBindingNavigator.SuspendLayout()
+        CType(Me.FlightsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NewFlightsSavedHere, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GliderPilotNameBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FlightsGliderPilotName, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.InstructorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.InstructorName, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Flight_refnumLabel
+        '
+        Flight_refnumLabel.AutoSize = True
+        Flight_refnumLabel.Location = New System.Drawing.Point(86, 53)
+        Flight_refnumLabel.Name = "Flight_refnumLabel"
+        Flight_refnumLabel.Size = New System.Drawing.Size(70, 13)
+        Flight_refnumLabel.TabIndex = 0
+        Flight_refnumLabel.Text = "Flight refnum:"
+        '
+        'Glider_Pilot_NameLabel
+        '
+        Glider_Pilot_NameLabel.AutoSize = True
+        Glider_Pilot_NameLabel.Location = New System.Drawing.Point(86, 79)
+        Glider_Pilot_NameLabel.Name = "Glider_Pilot_NameLabel"
+        Glider_Pilot_NameLabel.Size = New System.Drawing.Size(91, 13)
+        Glider_Pilot_NameLabel.TabIndex = 2
+        Glider_Pilot_NameLabel.Text = "Glider Pilot Name:"
+        '
+        'Instructor_nameLabel
+        '
+        Instructor_nameLabel.AutoSize = True
+        Instructor_nameLabel.Location = New System.Drawing.Point(86, 106)
+        Instructor_nameLabel.Name = "Instructor_nameLabel"
+        Instructor_nameLabel.Size = New System.Drawing.Size(83, 13)
+        Instructor_nameLabel.TabIndex = 4
+        Instructor_nameLabel.Text = "Instructor name:"
+        '
+        'Passenger_nameLabel
+        '
+        Passenger_nameLabel.AutoSize = True
+        Passenger_nameLabel.Location = New System.Drawing.Point(86, 133)
+        Passenger_nameLabel.Name = "Passenger_nameLabel"
+        Passenger_nameLabel.Size = New System.Drawing.Size(89, 13)
+        Passenger_nameLabel.TabIndex = 6
+        Passenger_nameLabel.Text = "Passenger name:"
+        '
+        'OD1Label
+        '
+        OD1Label.AutoSize = True
+        OD1Label.Location = New System.Drawing.Point(86, 160)
+        OD1Label.Name = "OD1Label"
+        OD1Label.Size = New System.Drawing.Size(32, 13)
+        OD1Label.TabIndex = 8
+        OD1Label.Text = "OD1:"
+        '
+        'OD2Label
+        '
+        OD2Label.AutoSize = True
+        OD2Label.Location = New System.Drawing.Point(86, 187)
+        OD2Label.Name = "OD2Label"
+        OD2Label.Size = New System.Drawing.Size(32, 13)
+        OD2Label.TabIndex = 10
+        OD2Label.Text = "OD2:"
+        '
+        'OD3Label
+        '
+        OD3Label.AutoSize = True
+        OD3Label.Location = New System.Drawing.Point(86, 214)
+        OD3Label.Name = "OD3Label"
+        OD3Label.Size = New System.Drawing.Size(32, 13)
+        OD3Label.TabIndex = 12
+        OD3Label.Text = "OD3:"
+        '
+        'AOD1Label
+        '
+        AOD1Label.AutoSize = True
+        AOD1Label.Location = New System.Drawing.Point(86, 241)
+        AOD1Label.Name = "AOD1Label"
+        AOD1Label.Size = New System.Drawing.Size(39, 13)
+        AOD1Label.TabIndex = 14
+        AOD1Label.Text = "AOD1:"
+        '
+        'AOD2Label
+        '
+        AOD2Label.AutoSize = True
+        AOD2Label.Location = New System.Drawing.Point(86, 268)
+        AOD2Label.Name = "AOD2Label"
+        AOD2Label.Size = New System.Drawing.Size(39, 13)
+        AOD2Label.TabIndex = 16
+        AOD2Label.Text = "AOD2:"
+        '
+        'TowPilot1Label
+        '
+        TowPilot1Label.AutoSize = True
+        TowPilot1Label.Location = New System.Drawing.Point(86, 295)
+        TowPilot1Label.Name = "TowPilot1Label"
+        TowPilot1Label.Size = New System.Drawing.Size(60, 13)
+        TowPilot1Label.TabIndex = 18
+        TowPilot1Label.Text = "Tow Pilot1:"
+        '
+        'TowPilot2Label
+        '
+        TowPilot2Label.AutoSize = True
+        TowPilot2Label.Location = New System.Drawing.Point(86, 322)
+        TowPilot2Label.Name = "TowPilot2Label"
+        TowPilot2Label.Size = New System.Drawing.Size(60, 13)
+        TowPilot2Label.TabIndex = 20
+        TowPilot2Label.Text = "Tow Pilot2:"
+        '
+        'TowPilot3Label
+        '
+        TowPilot3Label.AutoSize = True
+        TowPilot3Label.Location = New System.Drawing.Point(86, 349)
+        TowPilot3Label.Name = "TowPilot3Label"
+        TowPilot3Label.Size = New System.Drawing.Size(60, 13)
+        TowPilot3Label.TabIndex = 22
+        TowPilot3Label.Text = "Tow Pilot3:"
+        '
+        'TowPlane1Label
+        '
+        TowPlane1Label.AutoSize = True
+        TowPlane1Label.Location = New System.Drawing.Point(86, 376)
+        TowPlane1Label.Name = "TowPlane1Label"
+        TowPlane1Label.Size = New System.Drawing.Size(67, 13)
+        TowPlane1Label.TabIndex = 24
+        TowPlane1Label.Text = "Tow Plane1:"
+        '
+        'TowPlane2Label
+        '
+        TowPlane2Label.AutoSize = True
+        TowPlane2Label.Location = New System.Drawing.Point(86, 403)
+        TowPlane2Label.Name = "TowPlane2Label"
+        TowPlane2Label.Size = New System.Drawing.Size(67, 13)
+        TowPlane2Label.TabIndex = 26
+        TowPlane2Label.Text = "Tow Plane2:"
+        '
+        'DateLabel
+        '
+        DateLabel.AutoSize = True
+        DateLabel.Location = New System.Drawing.Point(86, 431)
+        DateLabel.Name = "DateLabel"
+        DateLabel.Size = New System.Drawing.Size(33, 13)
+        DateLabel.TabIndex = 28
+        DateLabel.Text = "Date:"
+        '
+        'Glider_takeoff_timeLabel
+        '
+        Glider_takeoff_timeLabel.AutoSize = True
+        Glider_takeoff_timeLabel.Location = New System.Drawing.Point(484, 56)
+        Glider_takeoff_timeLabel.Name = "Glider_takeoff_timeLabel"
+        Glider_takeoff_timeLabel.Size = New System.Drawing.Size(95, 13)
+        Glider_takeoff_timeLabel.TabIndex = 30
+        Glider_takeoff_timeLabel.Text = "Glider takeoff time:"
+        '
+        'Glider_landing_timeLabel
+        '
+        Glider_landing_timeLabel.AutoSize = True
+        Glider_landing_timeLabel.Location = New System.Drawing.Point(484, 82)
+        Glider_landing_timeLabel.Name = "Glider_landing_timeLabel"
+        Glider_landing_timeLabel.Size = New System.Drawing.Size(96, 13)
+        Glider_landing_timeLabel.TabIndex = 32
+        Glider_landing_timeLabel.Text = "Glider landing time:"
+        '
+        'Tow_takeoff_timeLabel
+        '
+        Tow_takeoff_timeLabel.AutoSize = True
+        Tow_takeoff_timeLabel.Location = New System.Drawing.Point(484, 108)
+        Tow_takeoff_timeLabel.Name = "Tow_takeoff_timeLabel"
+        Tow_takeoff_timeLabel.Size = New System.Drawing.Size(89, 13)
+        Tow_takeoff_timeLabel.TabIndex = 34
+        Tow_takeoff_timeLabel.Text = "Tow takeoff time:"
+        '
+        'Tow_landing_timeLabel
+        '
+        Tow_landing_timeLabel.AutoSize = True
+        Tow_landing_timeLabel.Location = New System.Drawing.Point(484, 134)
+        Tow_landing_timeLabel.Name = "Tow_landing_timeLabel"
+        Tow_landing_timeLabel.Size = New System.Drawing.Size(90, 13)
+        Tow_landing_timeLabel.TabIndex = 36
+        Tow_landing_timeLabel.Text = "Tow landing time:"
+        '
+        'Altitude_towedLabel
+        '
+        Altitude_towedLabel.AutoSize = True
+        Altitude_towedLabel.Location = New System.Drawing.Point(484, 160)
+        Altitude_towedLabel.Name = "Altitude_towedLabel"
+        Altitude_towedLabel.Size = New System.Drawing.Size(77, 13)
+        Altitude_towedLabel.TabIndex = 38
+        Altitude_towedLabel.Text = "Altitude towed:"
+        '
+        'Rope_breakLabel
+        '
+        Rope_breakLabel.AutoSize = True
+        Rope_breakLabel.Location = New System.Drawing.Point(484, 186)
+        Rope_breakLabel.Name = "Rope_breakLabel"
+        Rope_breakLabel.Size = New System.Drawing.Size(66, 13)
+        Rope_breakLabel.TabIndex = 40
+        Rope_breakLabel.Text = "Rope break:"
+        '
+        'Airport_nameLabel
+        '
+        Airport_nameLabel.AutoSize = True
+        Airport_nameLabel.Location = New System.Drawing.Point(484, 212)
+        Airport_nameLabel.Name = "Airport_nameLabel"
+        Airport_nameLabel.Size = New System.Drawing.Size(69, 13)
+        Airport_nameLabel.TabIndex = 42
+        Airport_nameLabel.Text = "Airport name:"
+        '
+        'Flight_minutesLabel
+        '
+        Flight_minutesLabel.AutoSize = True
+        Flight_minutesLabel.Location = New System.Drawing.Point(484, 238)
+        Flight_minutesLabel.Name = "Flight_minutesLabel"
+        Flight_minutesLabel.Size = New System.Drawing.Size(74, 13)
+        Flight_minutesLabel.TabIndex = 44
+        Flight_minutesLabel.Text = "Flight minutes:"
+        '
+        'First_name_on_invoiceLabel
+        '
+        First_name_on_invoiceLabel.AutoSize = True
+        First_name_on_invoiceLabel.Location = New System.Drawing.Point(484, 264)
+        First_name_on_invoiceLabel.Name = "First_name_on_invoiceLabel"
+        First_name_on_invoiceLabel.Size = New System.Drawing.Size(110, 13)
+        First_name_on_invoiceLabel.TabIndex = 46
+        First_name_on_invoiceLabel.Text = "First name on invoice:"
+        '
+        'Split_costLabel
+        '
+        Split_costLabel.AutoSize = True
+        Split_costLabel.Location = New System.Drawing.Point(484, 293)
+        Split_costLabel.Name = "Split_costLabel"
+        Split_costLabel.Size = New System.Drawing.Size(53, 13)
+        Split_costLabel.TabIndex = 48
+        Split_costLabel.Text = "Split cost:"
+        '
+        'Percent_1st_checkLabel
+        '
+        Percent_1st_checkLabel.AutoSize = True
+        Percent_1st_checkLabel.Location = New System.Drawing.Point(484, 321)
+        Percent_1st_checkLabel.Name = "Percent_1st_checkLabel"
+        Percent_1st_checkLabel.Size = New System.Drawing.Size(97, 13)
+        Percent_1st_checkLabel.TabIndex = 50
+        Percent_1st_checkLabel.Text = "Percent 1st check:"
+        '
+        'Second_name_on_invoiceLabel
+        '
+        Second_name_on_invoiceLabel.AutoSize = True
+        Second_name_on_invoiceLabel.Location = New System.Drawing.Point(484, 347)
+        Second_name_on_invoiceLabel.Name = "Second_name_on_invoiceLabel"
+        Second_name_on_invoiceLabel.Size = New System.Drawing.Size(128, 13)
+        Second_name_on_invoiceLabel.TabIndex = 52
+        Second_name_on_invoiceLabel.Text = "Second name on invoice:"
+        '
+        'Penalty_chargeLabel
+        '
+        Penalty_chargeLabel.AutoSize = True
+        Penalty_chargeLabel.Location = New System.Drawing.Point(484, 376)
+        Penalty_chargeLabel.Name = "Penalty_chargeLabel"
+        Penalty_chargeLabel.Size = New System.Drawing.Size(81, 13)
+        Penalty_chargeLabel.TabIndex = 54
+        Penalty_chargeLabel.Text = "Penalty charge:"
+        '
+        'Cost_this_flightLabel
+        '
+        Cost_this_flightLabel.AutoSize = True
+        Cost_this_flightLabel.Location = New System.Drawing.Point(484, 404)
+        Cost_this_flightLabel.Name = "Cost_this_flightLabel"
+        Cost_this_flightLabel.Size = New System.Drawing.Size(75, 13)
+        Cost_this_flightLabel.TabIndex = 56
+        Cost_this_flightLabel.Text = "Cost this flight:"
         '
         'TabControl1
         '
@@ -235,59 +508,6 @@ Partial Class Form1
         Me.TabPage2.Text = "Enter New Flights"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'TabPage3
-        '
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1008, 519)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Print Invoices"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'TabPage4
-        '
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1008, 519)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Add Pilot Names"
-        Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'TabPage5
-        '
-        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(1008, 519)
-        Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "Admin Stuff"
-        Me.TabPage5.UseVisualStyleBackColor = True
-        '
-        'NewFlightsSavedHere
-        '
-        Me.NewFlightsSavedHere.DataSetName = "NewFlightsSavedHere"
-        Me.NewFlightsSavedHere.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'FlightsBindingSource
-        '
-        Me.FlightsBindingSource.DataMember = "Flights"
-        Me.FlightsBindingSource.DataSource = Me.NewFlightsSavedHere
-        '
-        'FlightsTableAdapter
-        '
-        Me.FlightsTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.AircraftTableAdapter = Nothing
-        Me.TableAdapterManager.AirportTableAdapter = Nothing
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.FlightsTableAdapter = Me.FlightsTableAdapter
-        Me.TableAdapterManager.MembersTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Masa_Ver2.NewFlightsSavedHereTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
         'FlightsBindingNavigator
         '
         Me.FlightsBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
@@ -306,6 +526,41 @@ Partial Class Form1
         Me.FlightsBindingNavigator.Size = New System.Drawing.Size(278, 25)
         Me.FlightsBindingNavigator.TabIndex = 1
         Me.FlightsBindingNavigator.Text = "BindingNavigator1"
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'FlightsBindingSource
+        '
+        Me.FlightsBindingSource.DataMember = "Flights"
+        Me.FlightsBindingSource.DataSource = Me.NewFlightsSavedHere
+        '
+        'NewFlightsSavedHere
+        '
+        Me.NewFlightsSavedHere.DataSetName = "NewFlightsSavedHere"
+        Me.NewFlightsSavedHere.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -339,17 +594,10 @@ Partial Class Form1
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 15)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -357,7 +605,7 @@ Partial Class Form1
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -366,48 +614,21 @@ Partial Class Form1
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'FlightsBindingNavigatorSaveItem
         '
         Me.FlightsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.FlightsBindingNavigatorSaveItem.Image = CType(resources.GetObject("FlightsBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.FlightsBindingNavigatorSaveItem.Name = "FlightsBindingNavigatorSaveItem"
-        Me.FlightsBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.FlightsBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.FlightsBindingNavigatorSaveItem.Text = "Save Data"
-        '
-        'Flight_refnumLabel
-        '
-        Flight_refnumLabel.AutoSize = True
-        Flight_refnumLabel.Location = New System.Drawing.Point(86, 53)
-        Flight_refnumLabel.Name = "Flight_refnumLabel"
-        Flight_refnumLabel.Size = New System.Drawing.Size(70, 13)
-        Flight_refnumLabel.TabIndex = 0
-        Flight_refnumLabel.Text = "Flight refnum:"
         '
         'Flight_refnumTextBox
         '
@@ -417,50 +638,51 @@ Partial Class Form1
         Me.Flight_refnumTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Flight_refnumTextBox.TabIndex = 1
         '
-        'Glider_Pilot_NameLabel
-        '
-        Glider_Pilot_NameLabel.AutoSize = True
-        Glider_Pilot_NameLabel.Location = New System.Drawing.Point(86, 79)
-        Glider_Pilot_NameLabel.Name = "Glider_Pilot_NameLabel"
-        Glider_Pilot_NameLabel.Size = New System.Drawing.Size(91, 13)
-        Glider_Pilot_NameLabel.TabIndex = 2
-        Glider_Pilot_NameLabel.Text = "Glider Pilot Name:"
-        '
         'Glider_Pilot_NameComboBox
         '
         Me.Glider_Pilot_NameComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "Glider_Pilot_Name", True))
+        Me.Glider_Pilot_NameComboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.FlightsBindingSource, "Glider_Pilot_Name", True))
+        Me.Glider_Pilot_NameComboBox.DataSource = Me.GliderPilotNameBindingSource
+        Me.Glider_Pilot_NameComboBox.DisplayMember = "Name"
         Me.Glider_Pilot_NameComboBox.FormattingEnabled = True
         Me.Glider_Pilot_NameComboBox.Location = New System.Drawing.Point(220, 76)
         Me.Glider_Pilot_NameComboBox.Name = "Glider_Pilot_NameComboBox"
         Me.Glider_Pilot_NameComboBox.Size = New System.Drawing.Size(200, 21)
         Me.Glider_Pilot_NameComboBox.TabIndex = 3
+        Me.Glider_Pilot_NameComboBox.ValueMember = "Member_refnum"
         '
-        'Instructor_nameLabel
+        'GliderPilotNameBindingSource
         '
-        Instructor_nameLabel.AutoSize = True
-        Instructor_nameLabel.Location = New System.Drawing.Point(86, 106)
-        Instructor_nameLabel.Name = "Instructor_nameLabel"
-        Instructor_nameLabel.Size = New System.Drawing.Size(83, 13)
-        Instructor_nameLabel.TabIndex = 4
-        Instructor_nameLabel.Text = "Instructor name:"
+        Me.GliderPilotNameBindingSource.DataMember = "Members"
+        Me.GliderPilotNameBindingSource.DataSource = Me.FlightsGliderPilotName
+        '
+        'FlightsGliderPilotName
+        '
+        Me.FlightsGliderPilotName.DataSetName = "FlightsGliderPilotName"
+        Me.FlightsGliderPilotName.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Instructor_nameComboBox
         '
         Me.Instructor_nameComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "Instructor_name", True))
+        Me.Instructor_nameComboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.FlightsBindingSource, "Instructor_name", True))
+        Me.Instructor_nameComboBox.DataSource = Me.InstructorBindingSource
+        Me.Instructor_nameComboBox.DisplayMember = "Name"
         Me.Instructor_nameComboBox.FormattingEnabled = True
         Me.Instructor_nameComboBox.Location = New System.Drawing.Point(220, 103)
         Me.Instructor_nameComboBox.Name = "Instructor_nameComboBox"
         Me.Instructor_nameComboBox.Size = New System.Drawing.Size(200, 21)
         Me.Instructor_nameComboBox.TabIndex = 5
+        Me.Instructor_nameComboBox.ValueMember = "Member_refnum"
         '
-        'Passenger_nameLabel
+        'InstructorBindingSource
         '
-        Passenger_nameLabel.AutoSize = True
-        Passenger_nameLabel.Location = New System.Drawing.Point(86, 133)
-        Passenger_nameLabel.Name = "Passenger_nameLabel"
-        Passenger_nameLabel.Size = New System.Drawing.Size(89, 13)
-        Passenger_nameLabel.TabIndex = 6
-        Passenger_nameLabel.Text = "Passenger name:"
+        Me.InstructorBindingSource.DataMember = "Members"
+        Me.InstructorBindingSource.DataSource = Me.InstructorName
+        '
+        'InstructorName
+        '
+        Me.InstructorName.DataSetName = "FlightsInstructorName"
+        Me.InstructorName.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Passenger_nameComboBox
         '
@@ -471,15 +693,6 @@ Partial Class Form1
         Me.Passenger_nameComboBox.Size = New System.Drawing.Size(200, 21)
         Me.Passenger_nameComboBox.TabIndex = 7
         '
-        'OD1Label
-        '
-        OD1Label.AutoSize = True
-        OD1Label.Location = New System.Drawing.Point(86, 160)
-        OD1Label.Name = "OD1Label"
-        OD1Label.Size = New System.Drawing.Size(32, 13)
-        OD1Label.TabIndex = 8
-        OD1Label.Text = "OD1:"
-        '
         'OD1ComboBox
         '
         Me.OD1ComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "OD1", True))
@@ -488,15 +701,6 @@ Partial Class Form1
         Me.OD1ComboBox.Name = "OD1ComboBox"
         Me.OD1ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.OD1ComboBox.TabIndex = 9
-        '
-        'OD2Label
-        '
-        OD2Label.AutoSize = True
-        OD2Label.Location = New System.Drawing.Point(86, 187)
-        OD2Label.Name = "OD2Label"
-        OD2Label.Size = New System.Drawing.Size(32, 13)
-        OD2Label.TabIndex = 10
-        OD2Label.Text = "OD2:"
         '
         'OD2ComboBox
         '
@@ -507,15 +711,6 @@ Partial Class Form1
         Me.OD2ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.OD2ComboBox.TabIndex = 11
         '
-        'OD3Label
-        '
-        OD3Label.AutoSize = True
-        OD3Label.Location = New System.Drawing.Point(86, 214)
-        OD3Label.Name = "OD3Label"
-        OD3Label.Size = New System.Drawing.Size(32, 13)
-        OD3Label.TabIndex = 12
-        OD3Label.Text = "OD3:"
-        '
         'OD3ComboBox
         '
         Me.OD3ComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "OD3", True))
@@ -524,15 +719,6 @@ Partial Class Form1
         Me.OD3ComboBox.Name = "OD3ComboBox"
         Me.OD3ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.OD3ComboBox.TabIndex = 13
-        '
-        'AOD1Label
-        '
-        AOD1Label.AutoSize = True
-        AOD1Label.Location = New System.Drawing.Point(86, 241)
-        AOD1Label.Name = "AOD1Label"
-        AOD1Label.Size = New System.Drawing.Size(39, 13)
-        AOD1Label.TabIndex = 14
-        AOD1Label.Text = "AOD1:"
         '
         'AOD1ComboBox
         '
@@ -543,15 +729,6 @@ Partial Class Form1
         Me.AOD1ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.AOD1ComboBox.TabIndex = 15
         '
-        'AOD2Label
-        '
-        AOD2Label.AutoSize = True
-        AOD2Label.Location = New System.Drawing.Point(86, 268)
-        AOD2Label.Name = "AOD2Label"
-        AOD2Label.Size = New System.Drawing.Size(39, 13)
-        AOD2Label.TabIndex = 16
-        AOD2Label.Text = "AOD2:"
-        '
         'AOD2ComboBox
         '
         Me.AOD2ComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "AOD2", True))
@@ -560,15 +737,6 @@ Partial Class Form1
         Me.AOD2ComboBox.Name = "AOD2ComboBox"
         Me.AOD2ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.AOD2ComboBox.TabIndex = 17
-        '
-        'TowPilot1Label
-        '
-        TowPilot1Label.AutoSize = True
-        TowPilot1Label.Location = New System.Drawing.Point(86, 295)
-        TowPilot1Label.Name = "TowPilot1Label"
-        TowPilot1Label.Size = New System.Drawing.Size(60, 13)
-        TowPilot1Label.TabIndex = 18
-        TowPilot1Label.Text = "Tow Pilot1:"
         '
         'TowPilot1ComboBox
         '
@@ -579,15 +747,6 @@ Partial Class Form1
         Me.TowPilot1ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.TowPilot1ComboBox.TabIndex = 19
         '
-        'TowPilot2Label
-        '
-        TowPilot2Label.AutoSize = True
-        TowPilot2Label.Location = New System.Drawing.Point(86, 322)
-        TowPilot2Label.Name = "TowPilot2Label"
-        TowPilot2Label.Size = New System.Drawing.Size(60, 13)
-        TowPilot2Label.TabIndex = 20
-        TowPilot2Label.Text = "Tow Pilot2:"
-        '
         'TowPilot2ComboBox
         '
         Me.TowPilot2ComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "TowPilot2", True))
@@ -596,15 +755,6 @@ Partial Class Form1
         Me.TowPilot2ComboBox.Name = "TowPilot2ComboBox"
         Me.TowPilot2ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.TowPilot2ComboBox.TabIndex = 21
-        '
-        'TowPilot3Label
-        '
-        TowPilot3Label.AutoSize = True
-        TowPilot3Label.Location = New System.Drawing.Point(86, 349)
-        TowPilot3Label.Name = "TowPilot3Label"
-        TowPilot3Label.Size = New System.Drawing.Size(60, 13)
-        TowPilot3Label.TabIndex = 22
-        TowPilot3Label.Text = "Tow Pilot3:"
         '
         'TowPilot3ComboBox
         '
@@ -615,15 +765,6 @@ Partial Class Form1
         Me.TowPilot3ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.TowPilot3ComboBox.TabIndex = 23
         '
-        'TowPlane1Label
-        '
-        TowPlane1Label.AutoSize = True
-        TowPlane1Label.Location = New System.Drawing.Point(86, 376)
-        TowPlane1Label.Name = "TowPlane1Label"
-        TowPlane1Label.Size = New System.Drawing.Size(67, 13)
-        TowPlane1Label.TabIndex = 24
-        TowPlane1Label.Text = "Tow Plane1:"
-        '
         'TowPlane1ComboBox
         '
         Me.TowPlane1ComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "TowPlane1", True))
@@ -632,15 +773,6 @@ Partial Class Form1
         Me.TowPlane1ComboBox.Name = "TowPlane1ComboBox"
         Me.TowPlane1ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.TowPlane1ComboBox.TabIndex = 25
-        '
-        'TowPlane2Label
-        '
-        TowPlane2Label.AutoSize = True
-        TowPlane2Label.Location = New System.Drawing.Point(86, 403)
-        TowPlane2Label.Name = "TowPlane2Label"
-        TowPlane2Label.Size = New System.Drawing.Size(67, 13)
-        TowPlane2Label.TabIndex = 26
-        TowPlane2Label.Text = "Tow Plane2:"
         '
         'TowPlane2ComboBox
         '
@@ -651,15 +783,6 @@ Partial Class Form1
         Me.TowPlane2ComboBox.Size = New System.Drawing.Size(200, 21)
         Me.TowPlane2ComboBox.TabIndex = 27
         '
-        'DateLabel
-        '
-        DateLabel.AutoSize = True
-        DateLabel.Location = New System.Drawing.Point(86, 431)
-        DateLabel.Name = "DateLabel"
-        DateLabel.Size = New System.Drawing.Size(33, 13)
-        DateLabel.TabIndex = 28
-        DateLabel.Text = "Date:"
-        '
         'DateDateTimePicker
         '
         Me.DateDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.FlightsBindingSource, "Date", True))
@@ -667,15 +790,6 @@ Partial Class Form1
         Me.DateDateTimePicker.Name = "DateDateTimePicker"
         Me.DateDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.DateDateTimePicker.TabIndex = 29
-        '
-        'Glider_takeoff_timeLabel
-        '
-        Glider_takeoff_timeLabel.AutoSize = True
-        Glider_takeoff_timeLabel.Location = New System.Drawing.Point(484, 56)
-        Glider_takeoff_timeLabel.Name = "Glider_takeoff_timeLabel"
-        Glider_takeoff_timeLabel.Size = New System.Drawing.Size(95, 13)
-        Glider_takeoff_timeLabel.TabIndex = 30
-        Glider_takeoff_timeLabel.Text = "Glider takeoff time:"
         '
         'Glider_takeoff_timeTextBox
         '
@@ -685,15 +799,6 @@ Partial Class Form1
         Me.Glider_takeoff_timeTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Glider_takeoff_timeTextBox.TabIndex = 31
         '
-        'Glider_landing_timeLabel
-        '
-        Glider_landing_timeLabel.AutoSize = True
-        Glider_landing_timeLabel.Location = New System.Drawing.Point(484, 82)
-        Glider_landing_timeLabel.Name = "Glider_landing_timeLabel"
-        Glider_landing_timeLabel.Size = New System.Drawing.Size(96, 13)
-        Glider_landing_timeLabel.TabIndex = 32
-        Glider_landing_timeLabel.Text = "Glider landing time:"
-        '
         'Glider_landing_timeTextBox
         '
         Me.Glider_landing_timeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "Glider_landing_time", True))
@@ -701,15 +806,6 @@ Partial Class Form1
         Me.Glider_landing_timeTextBox.Name = "Glider_landing_timeTextBox"
         Me.Glider_landing_timeTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Glider_landing_timeTextBox.TabIndex = 33
-        '
-        'Tow_takeoff_timeLabel
-        '
-        Tow_takeoff_timeLabel.AutoSize = True
-        Tow_takeoff_timeLabel.Location = New System.Drawing.Point(484, 108)
-        Tow_takeoff_timeLabel.Name = "Tow_takeoff_timeLabel"
-        Tow_takeoff_timeLabel.Size = New System.Drawing.Size(89, 13)
-        Tow_takeoff_timeLabel.TabIndex = 34
-        Tow_takeoff_timeLabel.Text = "Tow takeoff time:"
         '
         'Tow_takeoff_timeTextBox
         '
@@ -719,15 +815,6 @@ Partial Class Form1
         Me.Tow_takeoff_timeTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Tow_takeoff_timeTextBox.TabIndex = 35
         '
-        'Tow_landing_timeLabel
-        '
-        Tow_landing_timeLabel.AutoSize = True
-        Tow_landing_timeLabel.Location = New System.Drawing.Point(484, 134)
-        Tow_landing_timeLabel.Name = "Tow_landing_timeLabel"
-        Tow_landing_timeLabel.Size = New System.Drawing.Size(90, 13)
-        Tow_landing_timeLabel.TabIndex = 36
-        Tow_landing_timeLabel.Text = "Tow landing time:"
-        '
         'Tow_landing_timeTextBox
         '
         Me.Tow_landing_timeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "Tow_landing_time", True))
@@ -735,15 +822,6 @@ Partial Class Form1
         Me.Tow_landing_timeTextBox.Name = "Tow_landing_timeTextBox"
         Me.Tow_landing_timeTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Tow_landing_timeTextBox.TabIndex = 37
-        '
-        'Altitude_towedLabel
-        '
-        Altitude_towedLabel.AutoSize = True
-        Altitude_towedLabel.Location = New System.Drawing.Point(484, 160)
-        Altitude_towedLabel.Name = "Altitude_towedLabel"
-        Altitude_towedLabel.Size = New System.Drawing.Size(77, 13)
-        Altitude_towedLabel.TabIndex = 38
-        Altitude_towedLabel.Text = "Altitude towed:"
         '
         'Altitude_towedTextBox
         '
@@ -753,15 +831,6 @@ Partial Class Form1
         Me.Altitude_towedTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Altitude_towedTextBox.TabIndex = 39
         '
-        'Rope_breakLabel
-        '
-        Rope_breakLabel.AutoSize = True
-        Rope_breakLabel.Location = New System.Drawing.Point(484, 186)
-        Rope_breakLabel.Name = "Rope_breakLabel"
-        Rope_breakLabel.Size = New System.Drawing.Size(66, 13)
-        Rope_breakLabel.TabIndex = 40
-        Rope_breakLabel.Text = "Rope break:"
-        '
         'Rope_breakTextBox
         '
         Me.Rope_breakTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "Rope_break", True))
@@ -769,15 +838,6 @@ Partial Class Form1
         Me.Rope_breakTextBox.Name = "Rope_breakTextBox"
         Me.Rope_breakTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Rope_breakTextBox.TabIndex = 41
-        '
-        'Airport_nameLabel
-        '
-        Airport_nameLabel.AutoSize = True
-        Airport_nameLabel.Location = New System.Drawing.Point(484, 212)
-        Airport_nameLabel.Name = "Airport_nameLabel"
-        Airport_nameLabel.Size = New System.Drawing.Size(69, 13)
-        Airport_nameLabel.TabIndex = 42
-        Airport_nameLabel.Text = "Airport name:"
         '
         'Airport_nameTextBox
         '
@@ -787,15 +847,6 @@ Partial Class Form1
         Me.Airport_nameTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Airport_nameTextBox.TabIndex = 43
         '
-        'Flight_minutesLabel
-        '
-        Flight_minutesLabel.AutoSize = True
-        Flight_minutesLabel.Location = New System.Drawing.Point(484, 238)
-        Flight_minutesLabel.Name = "Flight_minutesLabel"
-        Flight_minutesLabel.Size = New System.Drawing.Size(74, 13)
-        Flight_minutesLabel.TabIndex = 44
-        Flight_minutesLabel.Text = "Flight minutes:"
-        '
         'Flight_minutesTextBox
         '
         Me.Flight_minutesTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "Flight_minutes", True))
@@ -803,15 +854,6 @@ Partial Class Form1
         Me.Flight_minutesTextBox.Name = "Flight_minutesTextBox"
         Me.Flight_minutesTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Flight_minutesTextBox.TabIndex = 45
-        '
-        'First_name_on_invoiceLabel
-        '
-        First_name_on_invoiceLabel.AutoSize = True
-        First_name_on_invoiceLabel.Location = New System.Drawing.Point(484, 264)
-        First_name_on_invoiceLabel.Name = "First_name_on_invoiceLabel"
-        First_name_on_invoiceLabel.Size = New System.Drawing.Size(110, 13)
-        First_name_on_invoiceLabel.TabIndex = 46
-        First_name_on_invoiceLabel.Text = "First name on invoice:"
         '
         'First_name_on_invoiceComboBox
         '
@@ -821,15 +863,6 @@ Partial Class Form1
         Me.First_name_on_invoiceComboBox.Name = "First_name_on_invoiceComboBox"
         Me.First_name_on_invoiceComboBox.Size = New System.Drawing.Size(200, 21)
         Me.First_name_on_invoiceComboBox.TabIndex = 47
-        '
-        'Split_costLabel
-        '
-        Split_costLabel.AutoSize = True
-        Split_costLabel.Location = New System.Drawing.Point(484, 293)
-        Split_costLabel.Name = "Split_costLabel"
-        Split_costLabel.Size = New System.Drawing.Size(53, 13)
-        Split_costLabel.TabIndex = 48
-        Split_costLabel.Text = "Split cost:"
         '
         'Split_costCheckBox
         '
@@ -841,15 +874,6 @@ Partial Class Form1
         Me.Split_costCheckBox.Text = "CheckBox1"
         Me.Split_costCheckBox.UseVisualStyleBackColor = True
         '
-        'Percent_1st_checkLabel
-        '
-        Percent_1st_checkLabel.AutoSize = True
-        Percent_1st_checkLabel.Location = New System.Drawing.Point(484, 321)
-        Percent_1st_checkLabel.Name = "Percent_1st_checkLabel"
-        Percent_1st_checkLabel.Size = New System.Drawing.Size(97, 13)
-        Percent_1st_checkLabel.TabIndex = 50
-        Percent_1st_checkLabel.Text = "Percent 1st check:"
-        '
         'Percent_1st_checkTextBox
         '
         Me.Percent_1st_checkTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "Percent_1st_check", True))
@@ -857,15 +881,6 @@ Partial Class Form1
         Me.Percent_1st_checkTextBox.Name = "Percent_1st_checkTextBox"
         Me.Percent_1st_checkTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Percent_1st_checkTextBox.TabIndex = 51
-        '
-        'Second_name_on_invoiceLabel
-        '
-        Second_name_on_invoiceLabel.AutoSize = True
-        Second_name_on_invoiceLabel.Location = New System.Drawing.Point(484, 347)
-        Second_name_on_invoiceLabel.Name = "Second_name_on_invoiceLabel"
-        Second_name_on_invoiceLabel.Size = New System.Drawing.Size(128, 13)
-        Second_name_on_invoiceLabel.TabIndex = 52
-        Second_name_on_invoiceLabel.Text = "Second name on invoice:"
         '
         'Second_name_on_invoiceComboBox
         '
@@ -875,15 +890,6 @@ Partial Class Form1
         Me.Second_name_on_invoiceComboBox.Name = "Second_name_on_invoiceComboBox"
         Me.Second_name_on_invoiceComboBox.Size = New System.Drawing.Size(200, 21)
         Me.Second_name_on_invoiceComboBox.TabIndex = 53
-        '
-        'Penalty_chargeLabel
-        '
-        Penalty_chargeLabel.AutoSize = True
-        Penalty_chargeLabel.Location = New System.Drawing.Point(484, 376)
-        Penalty_chargeLabel.Name = "Penalty_chargeLabel"
-        Penalty_chargeLabel.Size = New System.Drawing.Size(81, 13)
-        Penalty_chargeLabel.TabIndex = 54
-        Penalty_chargeLabel.Text = "Penalty charge:"
         '
         'Penalty_chargeCheckBox
         '
@@ -895,15 +901,6 @@ Partial Class Form1
         Me.Penalty_chargeCheckBox.Text = "CheckBox1"
         Me.Penalty_chargeCheckBox.UseVisualStyleBackColor = True
         '
-        'Cost_this_flightLabel
-        '
-        Cost_this_flightLabel.AutoSize = True
-        Cost_this_flightLabel.Location = New System.Drawing.Point(484, 404)
-        Cost_this_flightLabel.Name = "Cost_this_flightLabel"
-        Cost_this_flightLabel.Size = New System.Drawing.Size(75, 13)
-        Cost_this_flightLabel.TabIndex = 56
-        Cost_this_flightLabel.Text = "Cost this flight:"
-        '
         'Cost_this_flightTextBox
         '
         Me.Cost_this_flightTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FlightsBindingSource, "Cost_this_flight", True))
@@ -911,6 +908,75 @@ Partial Class Form1
         Me.Cost_this_flightTextBox.Name = "Cost_this_flightTextBox"
         Me.Cost_this_flightTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Cost_this_flightTextBox.TabIndex = 57
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(1008, 519)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Print Invoices"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(1008, 519)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Add Pilot Names"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'TabPage5
+        '
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage5.Size = New System.Drawing.Size(1008, 519)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "Admin Stuff"
+        Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'FlightsTableAdapter
+        '
+        Me.FlightsTableAdapter.ClearBeforeFill = True
+        '
+        'FlightsTableAdapterManager
+        '
+        Me.FlightsTableAdapterManager.AircraftTableAdapter = Nothing
+        Me.FlightsTableAdapterManager.AirportTableAdapter = Nothing
+        Me.FlightsTableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.FlightsTableAdapterManager.FlightsTableAdapter = Me.FlightsTableAdapter
+        Me.FlightsTableAdapterManager.MembersTableAdapter = Nothing
+        Me.FlightsTableAdapterManager.UpdateOrder = Masa_Ver2.NewFlightsSavedHereTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'GliderPilotNameTableAdapter
+        '
+        Me.GliderPilotNameTableAdapter.ClearBeforeFill = True
+        '
+        'GliderPilotNameTableAdapterManager1
+        '
+        Me.GliderPilotNameTableAdapterManager1.AircraftTableAdapter = Nothing
+        Me.GliderPilotNameTableAdapterManager1.AirportTableAdapter = Nothing
+        Me.GliderPilotNameTableAdapterManager1.BackupDataSetBeforeUpdate = False
+        Me.GliderPilotNameTableAdapterManager1.FlightsTableAdapter = Nothing
+        Me.GliderPilotNameTableAdapterManager1.MembersTableAdapter = Me.GliderPilotNameTableAdapter
+        Me.GliderPilotNameTableAdapterManager1.UpdateOrder = Masa_Ver2.FlightsGliderPilotNameTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'InstructorTableAdapter
+        '
+        Me.InstructorTableAdapter.ClearBeforeFill = True
+        '
+        'InstructorTableAdapterManager
+        '
+        Me.InstructorTableAdapterManager.AircraftTableAdapter = Nothing
+        Me.InstructorTableAdapterManager.AirportTableAdapter = Nothing
+        Me.InstructorTableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.InstructorTableAdapterManager.FlightsTableAdapter = Nothing
+        Me.InstructorTableAdapterManager.MembersTableAdapter = Me.InstructorTableAdapter
+        Me.InstructorTableAdapterManager.UpdateOrder = Masa_Ver2.FlightsInstructorNameTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'Form1
         '
@@ -923,11 +989,15 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.NewFlightsSavedHere, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FlightsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FlightsBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FlightsBindingNavigator.ResumeLayout(False)
         Me.FlightsBindingNavigator.PerformLayout()
+        CType(Me.FlightsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NewFlightsSavedHere, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GliderPilotNameBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FlightsGliderPilotName, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.InstructorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.InstructorName, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -941,7 +1011,7 @@ Partial Class Form1
     Friend WithEvents NewFlightsSavedHere As NewFlightsSavedHere
     Friend WithEvents FlightsBindingSource As BindingSource
     Friend WithEvents FlightsTableAdapter As NewFlightsSavedHereTableAdapters.FlightsTableAdapter
-    Friend WithEvents TableAdapterManager As NewFlightsSavedHereTableAdapters.TableAdapterManager
+    Friend WithEvents FlightsTableAdapterManager As NewFlightsSavedHereTableAdapters.TableAdapterManager
     Friend WithEvents FlightsBindingNavigator As BindingNavigator
     Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
     Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
@@ -984,4 +1054,12 @@ Partial Class Form1
     Friend WithEvents Second_name_on_invoiceComboBox As ComboBox
     Friend WithEvents Penalty_chargeCheckBox As CheckBox
     Friend WithEvents Cost_this_flightTextBox As TextBox
+    Friend WithEvents FlightsGliderPilotName As FlightsGliderPilotName
+    Friend WithEvents GliderPilotNameBindingSource As BindingSource
+    Friend WithEvents GliderPilotNameTableAdapter As FlightsGliderPilotNameTableAdapters.MembersTableAdapter
+    Friend WithEvents GliderPilotNameTableAdapterManager1 As FlightsGliderPilotNameTableAdapters.TableAdapterManager
+    Friend WithEvents InstructorName As FlightsInstructorName
+    Friend WithEvents InstructorBindingSource As BindingSource
+    Friend WithEvents InstructorTableAdapter As FlightsInstructorNameTableAdapters.MembersTableAdapter
+    Friend WithEvents InstructorTableAdapterManager As FlightsInstructorNameTableAdapters.TableAdapterManager
 End Class
