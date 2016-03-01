@@ -523,7 +523,7 @@ Partial Class Form1
         Me.FlightsBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.FlightsBindingNavigator.Name = "FlightsBindingNavigator"
         Me.FlightsBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.FlightsBindingNavigator.Size = New System.Drawing.Size(278, 25)
+        Me.FlightsBindingNavigator.Size = New System.Drawing.Size(309, 25)
         Me.FlightsBindingNavigator.TabIndex = 1
         Me.FlightsBindingNavigator.Text = "BindingNavigator1"
         '

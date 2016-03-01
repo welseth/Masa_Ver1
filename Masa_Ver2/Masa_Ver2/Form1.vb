@@ -1,8 +1,18 @@
 ﻿Public Class Form1
     Private Sub FlightsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles FlightsBindingNavigatorSaveItem.Click
-        Me.Validate()
-        Me.FlightsBindingSource.EndEdit()
-        Me.FlightsTableAdapterManager.UpdateAll(Me.NewFlightsSavedHere)
+        Try
+            Me.Validate()
+            Me.FlightsBindingSource.EndEdit()
+            Me.FlightsTableAdapterManager.UpdateAll(Me.NewFlightsSavedHere)
+            MsgBox("Update Successful")
+
+        Catch ex As Exception
+            MsgBox("Update failed...")
+        End Try
+
+    End Sub
+
+    Private Sub BindingNavigatorAddNewItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorAddNewItem.Click
 
     End Sub
 
@@ -15,4 +25,6 @@
         Me.FlightsTableAdapter.Fill(Me.NewFlightsSavedHere.Flights)
 
     End Sub
+
+
 End Class

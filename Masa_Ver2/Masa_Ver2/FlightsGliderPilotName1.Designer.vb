@@ -319,7 +319,7 @@ Partial Public Class FlightsGliderPilotName
         Me.DataSetName = "FlightsGliderPilotName"
         Me.Prefix = ""
         Me.Namespace = "http://tempuri.org/FlightsGliderPilotName.xsd"
-        Me.EnforceConstraints = false
+        Me.EnforceConstraints = true
         Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
         Me.tableAircraft = New AircraftDataTable()
         MyBase.Tables.Add(Me.tableAircraft)
