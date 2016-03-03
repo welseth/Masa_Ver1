@@ -1,9 +1,15 @@
 ﻿Public Class Form1
-    Private Sub FlightsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles FlightsBindingNavigatorSaveItem.Click
+    'Private Sub FlightsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
+    '    Me.Validate()
+    '    Me.FlightsBindingSource.EndEdit()
+    '    Me.FlightsTableAdapterManager.UpdateAll(Me.MASA_allDataSet)
+
+    'End Sub
+
+    Private Sub FlightsBindingNavigatorSaveItem_Click_1(sender As Object, e As EventArgs) Handles FlightsBindingNavigatorSaveItem.Click
         Me.Validate()
         Me.FlightsBindingSource.EndEdit()
         Me.FlightsTableAdapterManager.UpdateAll(Me.MASA_allDataSet)
-
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -16,7 +22,8 @@
 
     End Sub
 
-    Private Sub MembersBindingSource_CurrentChanged(sender As Object, e As EventArgs) Handles GliderPilotNameMembersBindingSource.CurrentChanged
+    Private Sub BindingNavigatorAddNewItem_ButtonClick(sender As Object, e As EventArgs)
 
     End Sub
+
 End Class
