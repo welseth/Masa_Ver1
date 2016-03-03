@@ -150,15 +150,16 @@ Partial Class Form1
         Me.FlightsBindingNavigator.BindingSource = Me.FlightsBindingSource
         Me.FlightsBindingNavigator.CountItem = Me.BindingNavigatorCountItem
         Me.FlightsBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.FlightsBindingNavigator.Dock = System.Windows.Forms.DockStyle.None
         Me.FlightsBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.FlightsBindingNavigatorSaveItem})
-        Me.FlightsBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.FlightsBindingNavigator.Location = New System.Drawing.Point(77, 48)
         Me.FlightsBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
         Me.FlightsBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
         Me.FlightsBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
         Me.FlightsBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.FlightsBindingNavigator.Name = "FlightsBindingNavigator"
         Me.FlightsBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.FlightsBindingNavigator.Size = New System.Drawing.Size(785, 25)
+        Me.FlightsBindingNavigator.Size = New System.Drawing.Size(277, 25)
         Me.FlightsBindingNavigator.TabIndex = 0
         Me.FlightsBindingNavigator.Text = "BindingNavigator1"
         '
